@@ -1,1 +1,1 @@
-** This is my first React JS project
+// This is my first React JS project
