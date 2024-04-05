@@ -1,4 +1,6 @@
-const notes = [
+import currentNote from "../App";
+
+const notesObject = [
   {
     key: 1,
     title: "Delegation",
@@ -23,12 +25,6 @@ const notes = [
     content:
       "What's the difference between hardware and software? You can hit your hardware with a hammer, but you can only curse at your software.",
   },
-  {
-    key: 5,
-    title: "Linux vs Windows",
-    content:
-      "What's the difference between linux and windows? You can hit your hardware with a hammer, but you can only curse at your software.",
-  },
 ];
 
-export default notes;
+export default notesObject;

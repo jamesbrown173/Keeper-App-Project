@@ -1,7 +1,5 @@
 import React from "react";
-import notes from "../notes";
-
-console.log(notes);
+import notesObject from "../notesObject";
 
 function Note(props) {
   return (
@@ -12,4 +10,4 @@ function Note(props) {
   );
 }
 
-export default Notes;
+export default Note;
