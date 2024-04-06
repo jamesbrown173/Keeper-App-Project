@@ -16,6 +16,7 @@ function CreateArea(props) {
 
 Here! Continue to update the form so that it 
 passes the input back to the handle typing function....
+// Didn't actually study today, just made a change so I can commit it
 
  */
 
