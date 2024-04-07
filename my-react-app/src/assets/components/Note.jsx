@@ -1,5 +1,4 @@
 import React from "react";
-import notesObject from "../notesObject";
 
 function Note(props) {
   return (
