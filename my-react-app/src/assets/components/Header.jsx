@@ -4,7 +4,10 @@ import HighlightIcon from "@mui/icons-material/Highlight";
 function Header() {
   return (
     <header>
-      <h1>Scoopy!</h1>
+      <h1>
+        <HighlightIcon />
+        Scoopy!
+      </h1>
     </header>
   );
 }
