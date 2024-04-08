@@ -6,21 +6,45 @@ import Note from "./assets/components/Note";
 import CreateArea from "./assets/components/CreateArea";
 
 function App() {
-  const [titleText, setTitleText] = useState();
-  const [contentText, setContentText] = useState();
+  const [currentNotes, setCurrentNotes] = useState([]);
 
-  function handleTyping() {
-    console.log(`function handleTyping()`);
+  function addNote(inputText) {
+    setCurrentNotes((prevValue) => {
+      return [...prevValue, inputText];
+    });
+  }
+
+  function deleteNote(id) {
+    setCurrentNotes((prevValue) => {
+      return prevValue.filter((noteItem, index) => {
+        return index !== id;
+      });
+    });
   }
 
   return (
     <div>
       <Header />
-      <CreateArea onType={handleTyping} />
-      <Note />
+      <CreateArea onClick={addNote} />
+      {currentNotes.map((note, index) => (
+        <Note
+          title={note.title}
+          content={note.content}
+          key={index}
+          id={index}
+          onDelete={deleteNote}
+        />
+      ))}
       <Footer />
     </div>
   );
 }
 
 export default App;
+
+/*
+
+
+
+
+*/
