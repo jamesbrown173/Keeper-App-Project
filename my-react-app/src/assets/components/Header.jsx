@@ -1,11 +1,11 @@
 import React from "react";
-import HighlightIcon from "@mui/icons-material/Highlight";
+import NightlightIcon from "@mui/icons-material/Nightlight";
 
 function Header() {
   return (
     <header>
       <h1>
-        <HighlightIcon />
+        <NightlightIcon />
         Scoopy!
       </h1>
     </header>
